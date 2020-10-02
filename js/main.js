@@ -37,8 +37,10 @@ goTop.style.opacity = '0';
 window.addEventListener('scroll', (e) => {
 	if(window.scrollY >= 650) {
 		goTop.style.opacity = '1';
+		goTop.style.transition = 'ease-in .3s';
 	}else {
 		goTop.style.opacity = '0';
+		goTop.style.transition = 'ease-in .3s';
 	}
 });
 
