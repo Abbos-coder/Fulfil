@@ -13,3 +13,22 @@ const loading = document.querySelector('.loading');
 setTimeout(() => {
 	loading.style.display = 'none'
 }, 2000);
+
+
+
+
+// goTop btn script 
+const goTop = document.querySelector('.top'),
+		navbar = document.querySelector('#navbar')
+
+function scrollTo(element) {
+	window.scroll({
+	  left: 0,
+	  top: element.offsetTop,
+	  behavior: "smooth"
+	});
+}
+ 
+goTop.addEventListener('click', (e) => {
+	scrollTo(navbar)
+})
