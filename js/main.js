@@ -32,3 +32,15 @@ function scrollTo(element) {
 goTop.addEventListener('click', (e) => {
 	scrollTo(document.body)
 })
+
+goTop.style.opacity = '0';
+window.addEventListener('scroll', (e) => {
+	if(window.scroll >= 650) {
+		goTop.style.opacity = '1';
+	}else {
+		goTop.style.opacity = '0';
+	}
+});
+
+
+
