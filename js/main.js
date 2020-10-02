@@ -30,5 +30,5 @@ function scrollTo(element) {
 }
  
 goTop.addEventListener('click', (e) => {
-	scrollTo(navbar)
+	scrollTo(document.body)
 })
