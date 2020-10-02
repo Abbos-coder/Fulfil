@@ -34,6 +34,7 @@ goTop.addEventListener('click', (e) => {
 })
 
 goTop.style.opacity = '0';
+goTop.style.zIndex = '100';
 window.addEventListener('scroll', (e) => {
 	if(window.scrollY >= 650) {
 		goTop.style.opacity = '1';
